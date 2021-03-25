@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from "./LOGO.png";
+import ICON from "./icon.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* // first part */}
+      <div className="a">
+        <div className="image">
+          <img src={Logo} />
+        </div>
+
+        <h2 className="name">School Name</h2>
+      </div>
+      {/* //first part closes */}
+      {/* //second part */}
+      <div className="b">
+        <div className="secondimage">
+          <img src={ICON} /> </div>
+
+        <div className="form">
+
+          <div className="form-group">
+            <input className="emails" type="text" name="email" placeholder="email" />
+          </div>
+          <div className="form-group">
+            <input className="passwords" type="text" name="password" placeholder="password" />
+          </div>
+        </div>
+
+        {/* 
+        <div className="email"></div>
+        <div className="pass"></div> */}
+        <h2 className="fp">
+          Forgot Password?
+</h2>
+        <h2 className="fe">
+          Forgot Email?
+</h2>
+        <button className="but" > <h2 className="signin">Sign in</h2></button>
+
+
+
+      </div>
     </div>
   );
 }
